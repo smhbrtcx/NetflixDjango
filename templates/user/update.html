@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% load static %}
+{% block body %}
+  <form action="" enctype="multipart/form-data" method="post" class="w-50 m-auto border p-4 mt-2">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Güncelle" class="btn btn-danger mt-2">
+  </form>
+{% endblock body %}
